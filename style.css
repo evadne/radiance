@@ -79,7 +79,10 @@ h1, h2, h3, h4, h5, h6, h7 {
 .fancyBrightScrollbar::-webkit-scrollbar-button:start:decrement { display: block; }
 .fancyBrightScrollbar::-webkit-scrollbar-button:end:increment { display: block; }
 .fancyBrightScrollbar::-webkit-scrollbar-track {
-  -webkit-border-radius: 4.5px 4.5px 4.5px 4.5px;
+  -webkit-border-top-left-radius: 4.5px;
+  -webkit-border-top-right-radius: 4.5px;
+  -webkit-border-bottom-right-radius: 4.5px;
+  -webkit-border-bottom-left-radius: 4.5px;
   -moz-border-radius: 4.5px 4.5px 4.5px 4.5px;
   -o-border-radius: 4.5px 4.5px 4.5px 4.5px;
   border-radius: 4.5px 4.5px 4.5px 4.5px;
@@ -89,7 +92,10 @@ h1, h2, h3, h4, h5, h6, h7 {
 }
 .fancyBrightScrollbar::-webkit-scrollbar-track:disabled { display: none; }
 .fancyBrightScrollbar::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 4.5px 4.5px 4.5px 4.5px;
+  -webkit-border-top-left-radius: 4.5px;
+  -webkit-border-top-right-radius: 4.5px;
+  -webkit-border-bottom-right-radius: 4.5px;
+  -webkit-border-bottom-left-radius: 4.5px;
   -moz-border-radius: 4.5px 4.5px 4.5px 4.5px;
   -o-border-radius: 4.5px 4.5px 4.5px 4.5px;
   border-radius: 4.5px 4.5px 4.5px 4.5px;
@@ -215,7 +221,10 @@ article code::-webkit-scrollbar { display: block; }
 article code::-webkit-scrollbar-button:start:decrement { display: block; }
 article code::-webkit-scrollbar-button:end:increment { display: block; }
 article code::-webkit-scrollbar-track {
-  -webkit-border-radius: 4.5px 4.5px 4.5px 4.5px;
+  -webkit-border-top-left-radius: 4.5px;
+  -webkit-border-top-right-radius: 4.5px;
+  -webkit-border-bottom-right-radius: 4.5px;
+  -webkit-border-bottom-left-radius: 4.5px;
   -moz-border-radius: 4.5px 4.5px 4.5px 4.5px;
   -o-border-radius: 4.5px 4.5px 4.5px 4.5px;
   border-radius: 4.5px 4.5px 4.5px 4.5px;
@@ -225,7 +234,10 @@ article code::-webkit-scrollbar-track {
 }
 article code::-webkit-scrollbar-track:disabled { display: none; }
 article code::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 4.5px 4.5px 4.5px 4.5px;
+  -webkit-border-top-left-radius: 4.5px;
+  -webkit-border-top-right-radius: 4.5px;
+  -webkit-border-bottom-right-radius: 4.5px;
+  -webkit-border-bottom-left-radius: 4.5px;
   -moz-border-radius: 4.5px 4.5px 4.5px 4.5px;
   -o-border-radius: 4.5px 4.5px 4.5px 4.5px;
   border-radius: 4.5px 4.5px 4.5px 4.5px;
@@ -276,7 +288,10 @@ article pre::-webkit-scrollbar { display: block; }
 article pre::-webkit-scrollbar-button:start:decrement { display: block; }
 article pre::-webkit-scrollbar-button:end:increment { display: block; }
 article pre::-webkit-scrollbar-track {
-  -webkit-border-radius: 4.5px 4.5px 4.5px 4.5px;
+  -webkit-border-top-left-radius: 4.5px;
+  -webkit-border-top-right-radius: 4.5px;
+  -webkit-border-bottom-right-radius: 4.5px;
+  -webkit-border-bottom-left-radius: 4.5px;
   -moz-border-radius: 4.5px 4.5px 4.5px 4.5px;
   -o-border-radius: 4.5px 4.5px 4.5px 4.5px;
   border-radius: 4.5px 4.5px 4.5px 4.5px;
@@ -286,7 +301,10 @@ article pre::-webkit-scrollbar-track {
 }
 article pre::-webkit-scrollbar-track:disabled { display: none; }
 article pre::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 4.5px 4.5px 4.5px 4.5px;
+  -webkit-border-top-left-radius: 4.5px;
+  -webkit-border-top-right-radius: 4.5px;
+  -webkit-border-bottom-right-radius: 4.5px;
+  -webkit-border-bottom-left-radius: 4.5px;
   -moz-border-radius: 4.5px 4.5px 4.5px 4.5px;
   -o-border-radius: 4.5px 4.5px 4.5px 4.5px;
   border-radius: 4.5px 4.5px 4.5px 4.5px;
@@ -374,7 +392,10 @@ article blockquote sup {
   -webkit-text-stroke: 1px transparent;
 }
 article img {
-  -webkit-border-radius: 4.5px 4.5px 4.5px 4.5px;
+  -webkit-border-top-left-radius: 4.5px;
+  -webkit-border-top-right-radius: 4.5px;
+  -webkit-border-bottom-right-radius: 4.5px;
+  -webkit-border-bottom-left-radius: 4.5px;
   -moz-border-radius: 4.5px 4.5px 4.5px 4.5px;
   -o-border-radius: 4.5px 4.5px 4.5px 4.5px;
   border-radius: 4.5px 4.5px 4.5px 4.5px;
