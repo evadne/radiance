@@ -319,7 +319,23 @@ article h2 {
   text-transform: uppercase;
 }
 article h1 { color: white; }
+article h1 code {
+  font-size: inherit;
+  line-height: inherit;
+}
+article h1 pre {
+  font-size: inherit;
+  line-height: inherit;
+}
 article h2 { color: white; }
+article h2 code {
+  font-size: inherit;
+  line-height: inherit;
+}
+article h2 pre {
+  font-size: inherit;
+  line-height: inherit;
+}
 article blockquote {
   font-size: 24px;
   line-height: 36px;
