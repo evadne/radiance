@@ -1,39 +1,48 @@
 <?php get_header(); ?>
 
-<div id="content" class="group">
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-<p class="comments"><a href="<?php comments_link(); ?>"><?php comments_number('without comments','with one comment','with % comments'); ?></a></p>
+	<article>
+	
+		<header>
 
-	<?php the_content('Read the rest of this entry &raquo;'); ?>
+		<h2 id="post-<?php the_ID(); ?>">
+		
+			<!-- <a href="<?php the_permalink() ?>" rel="bookmark"> --><?php the_title(); ?><!-- </a> -->
+		
+			<section class="category"><?php the_category(',') ?><?php if ( the_tags('<p>Tagged with ', ', ', '</p>') ) ?></section>
+		
+		</h2>
+		<time><?php the_time('F jS, Y'); ?> <?php _e("at"); ?> <?php the_time('g:i a'); ?></time>
+		
+		</header>
 
-<div class="meta group">
-<div class="signature">
-    <p>Written by <?php the_author() ?> <span class="edit"><?php edit_post_link('Edit'); ?></span></p>
-    <p><?php the_time('F jS, Y'); ?> <?php _e("at"); ?> <?php the_time('g:i a'); ?></p>
-</div>	
-<div class="tags">
-    <p>Posted in <?php the_category(',') ?></p>
-    <?php if ( the_tags('<p>Tagged with ', ', ', '</p>') ) ?>
-</div>
-</div>
+		<?php the_content('Read the rest of this entry &raquo;'); ?>
 
-<div class="navigation group">
-    <div class="alignleft"><?php previous_post_link('&laquo; %link') ?></div>
-    <div class="alignright"><?php next_post_link('%link &raquo;') ?></div>
-</div>
+		<?php //	if ( comments_open() ) comments_template(); ?>
 
-<?php if ( comments_open() ) comments_template(); ?>
+	</article>
 
-<?php endwhile; else: ?>
-<div class="warning">
-	<p>Sorry, but you are looking for something that isn't here.</p>
-</div>
-<?php endif; ?>
+	
+	
+	
+	
+	<?php endwhile; else: ?>
+	
+		<p>Sorry, but you are looking for something that isn't here.</p>
+	
+	<?php endif; ?>
 
-</div> 
+
+
+
+
+	<nav>
+	
+		<?php next_posts_link('&laquo; Older Entries') ?>
+		<?php previous_posts_link('Newer Entries &raquo;') ?>
+	
+	</nav>
 
 <?php get_sidebar(); ?>
-
 <?php get_footer(); ?>
