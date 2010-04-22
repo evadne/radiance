@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+	<head profile="http://gmpg.org/xfn/11">
+	<title>Ouverture</title>
+	
+<!-- 	<base href="http://blog.monoceroi.com"></base> -->
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="on liminal issues" />
+	<meta name="generator" content="WordPress 2.9.2" />
+
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="Ouverture RSS Feed" href="http://blog.monoceroi.com/feed/" />
+	<link rel="shortcut icon" type="image/x-png" href="http://blog.monoceroi.com/wp-content/themes/radiance/favicon.png" />
+	<link rel="pingback" href="http://blog.monoceroi.com/xmlrpc.php" />
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.monoceroi.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.monoceroi.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Ouverture' href='http://blog.monoceroi.com' />
+<meta name="generator" content="WordPress 2.9.2" />
+<script type="text/javascript" src="http://blog.monoceroi.com/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("http://blog.monoceroi.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"yes",noinfo:"yes",buffer:"5",checkpolicy:"no",rtl:"no",bg:"cccccc",text:"666666",leftbg:"eeeeee",lefticon:"666666",volslider:"666666",voltrack:"FFFFFF",rightbg:"cccccc",rightbghover:"999999",righticon:"666666",righticonhover:"ffffff",track:"FFFFFF",loader:"454545",border:"666666",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<link rel="shortlink" href="" />
+</head><body>
+
+
+
+
+
+<header>
+
+	<h1><a href="http://blog.monoceroi.com/">Ouverture</a></h1>
+	<h2>on liminal issues</h2>
+	
+</header>
+
+
+
+
+
+
+	
+	<article>
+	
+		<header>
+
+		<h2 id="post-2492">
+		
+			<!-- <a href="http://blog.monoceroi.com/2010/04/23/anc/" rel="bookmark"> -->anc<!-- </a> -->
+		
+			<section class="category"><a href="http://blog.monoceroi.com/categories/meditative/" title="View all posts in Meditative" rel="category tag">Meditative</a></section>
+		
+		</h2>
+		<time>April 23rd, 2010 at 4:28 am</time>
+		
+		</header>
+
+		<p>Homelessness is not a state, but a feeling.  And what we deem as maturity is, according to my younger doppelgänger-like counterpart, willingness to pass up and die a little bit more inside.</p>
+
+		
+	</article>
+
+	
+	
+	
+	
+	
+	<article>
+	
+		<header>
+
+		<h2 id="post-2490">
+		
+			<!-- <a href="http://blog.monoceroi.com/2010/04/20/lantern/" rel="bookmark"> -->lantern<!-- </a> -->
+		
+			<section class="category"><a href="http://blog.monoceroi.com/categories/general/" title="View all posts in General" rel="category tag">General</a>, <a href="http://blog.monoceroi.com/categories/lumination/" title="View all posts in Lumination" rel="category tag">Lumination</a></section>
+		
+		</h2>
+		<time>April 20th, 2010 at 3:27 am</time>
+		
+		</header>
+
+		<p>To recurse divine.</p>
+
+		
+	</article>
+
+	
+	
+	
+	
+	
+	<article>
+	
+		<header>
+
+		<h2 id="post-2485">
+		
+			<!-- <a href="http://blog.monoceroi.com/2010/04/14/lucidity/" rel="bookmark"> -->lucidity<!-- </a> -->
+		
+			<section class="category"><a href="http://blog.monoceroi.com/categories/opus/" title="View all posts in Opus" rel="category tag">Opus</a></section>
+		
+		</h2>
+		<time>April 14th, 2010 at 2:21 pm</time>
+		
+		</header>
+
+		<h1>A Weekly Update</h1>
+
+<p>Things are not going very well and some stuff I once enjoyed to do turned into an overshadowing nightmare.  Unpleasant it may seem it was quite educating; however entertaining no more.</p>
+
+<p>We’ll see what turns up.</p>
+
+		
+	</article>
+
+	
+	
+	
+	
+	
+	<article>
+	
+		<header>
+
+		<h2 id="post-2475">
+		
+			<!-- <a href="http://blog.monoceroi.com/2010/04/11/lux-aeternas/" rel="bookmark"> -->lux aeternas<!-- </a> -->
+		
+			<section class="category"><a href="http://blog.monoceroi.com/categories/opus/" title="View all posts in Opus" rel="category tag">Opus</a></section>
+		
+		</h2>
+		<time>April 11th, 2010 at 7:00 pm</time>
+		
+		</header>
+
+		<h1>Codex</h1>
+
+<h2>mono.preferencesController</h2>
+
+<p><a href="http://github.com/monoceroi/monoSnippets/commit/b1e23798e0037ca814bc5b88f20f355f8eb6cff5">mono.preferencesController</a>, a preferences controller that is very easy to use, is out.  It works this way.</p>
+
+<pre><code>var prefController = new mono.preferencesController({
+
+    predesignatedPreferenceKey: "aValue",
+    yetAnotherKey: 2046,
+    alpha: "beta"
+
+});
+
+//  Logs “beta”.
+window.console.log(prefController("alpha");
+
+//  The new value is also returned.
+window.console.log(prefController("alpha", "gamma"));
+
+//  The new value is set.
+window.console.log(prefController("alpha")); window.console.log(prefController("alpha")); window.console.log(prefController("alpha")); window.console.log(prefController("alpha"));
+</code></pre>
+
+<h2>Chromifier</h2>
+
+<p><a href="http://github.com/monoceroi/chromifier">Chromifier</a> makes your Google Chrome icons look sharp.  Iconology courtesy <a href="http://jiwostudio.com">Leo Lin</a>.</p>
+
+		
+	</article>
+
+	
+	
+	
+	
+	
+	<article>
+	
+		<header>
+
+		<h2 id="post-2471">
+		
+			<!-- <a href="http://blog.monoceroi.com/2010/04/07/aeternas-lux/" rel="bookmark"> -->aeternas lux<!-- </a> -->
+		
+			<section class="category"><a href="http://blog.monoceroi.com/categories/general/" title="View all posts in General" rel="category tag">General</a>, <a href="http://blog.monoceroi.com/categories/illustration/" title="View all posts in Illustration" rel="category tag">Illustration</a>, <a href="http://blog.monoceroi.com/categories/opus/" title="View all posts in Opus" rel="category tag">Opus</a></section>
+		
+		</h2>
+		<time>April 7th, 2010 at 10:54 am</time>
+		
+		</header>
+
+		<h1>A pictorial guide to the first half of my week</h1>
+
+<p><img src="http://farm5.static.flickr.com/4029/4492821142_07bd963780_o.png" alt="Leaves ME" /></p>
+
+<p><img src="http://farm5.static.flickr.com/4058/4498314079_ac9166d441_o.png" alt="Babble" /></p>
+
+<p><img src="http://farm3.static.flickr.com/2682/4498949874_b6b17f4b6b_o.png" alt="Branches" /></p>
+
+<p><img src="http://farm5.static.flickr.com/4036/4498950056_0a18e729be_o.png" alt="Keyboarded" /></p>
+
+<h1>Codex</h1>
+
+<h2><code>lib.jQuery.uniform/nebula</code></h2>
+
+<p><a href="http://github.com/monoceroi/uniform/tree/nebula">monoceroi/uniform/nebula</a> is my fork of the famous <code>jQuery.uniform</code> plugin, which does a bit more than the original.  For instance, selectors are no longer fixed-width; there is now no overlaid parts so transparent sprites do not interfere with each other.</p>
+
+<h2><code>monoSnippets</code></h2>
+
+<p><a href="http://github.com/monoceroi/monoSnippets">monoceroi/monoSnippets/master</a> is my convenience library that leverages LESS (so to make cross-browser box-shadows, you say <code>.shadowed(black, 0px, 0px, 2px)</code> and LESS converts it into a huge multi-liner for you, etc.)  Because of LESS&rsquo;s immersive expression power, it is now painles to implement <code>NSNinePartImage</code> with code in decent browsers with help from the newly added <code>.borderImage</code> class.</p>
+
+<h1>Alia</h1>
+
+<p>Things are not going very steadily.  Ripples here and there, and time is running out&#8230;</p>
+
+		
+	</article>
+
+	
+	
+	
+	
+	
+
+
+
+
+	<nav>
+	
+		<a href="http://blog.monoceroi.com/page/2/" >&laquo; Older Entries</a>			
+	</nav>
+
+<div id="sidebar">
+
+
+</div>
+
+<!-- tracker not added by Ultimate Google Analytics plugin v1.6.0: http://www.oratransplant.nl/uga -->
+<!-- tracker is not added for a logged on user of this level -->
+</body>
+</html>

@@ -1,0 +1,380 @@
+/*
+Theme Name: Radiance
+Theme URI: http://blog.monoceroi.com
+Description: Radiant.
+Version: .5
+Author: <a href="http://monoceroi.com">Evadne Wu</a>
+Tags: black, dark, one column, minimal
+Iridia.
+*/
+
+@import "ui/lib.monoSnippets/lib.monoSnippets.reset.less";
+@import "ui/lib.monoSnippets/lib.monoSnippets.less";
+
+
+
+
+
+a {
+
+	color: inherit;
+	text-decoration: inherit;
+
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+
+	font-weight: normal;
+	font-size: inherit;
+
+}
+
+.cleanStroke {
+
+	-webkit-text-stroke: 1px transparent;
+
+}
+
+.fancyBrightScrollbar {
+
+	.fancyScrollbar;
+	
+	::-webkit-scrollbar-track {
+	
+		background: rgba(255, 255, 255, .15);
+	
+	}
+	
+	::-webkit-scrollbar-thumb {
+	
+		background: rgba(255, 255, 255, .25);
+
+	}
+	
+	:hover::-webkit-scrollbar-thumb {
+	
+		background: rgba(255, 255, 255, .35);
+	
+	}
+	
+	::-webkit-scrollbar-thumb:hover {
+	
+		background: rgba(255, 255, 255, .55);
+	
+	}
+
+}
+
+.slatedScrollbar {
+		
+	::-webkit-scrollbar-button:start:decrement,
+	::-webkit-scrollbar-button:end:increment {
+	
+		display: none;
+	
+	}
+
+}
+
+
+
+
+
+
+
+
+html {
+
+	background: rgb(46, 50, 56);
+	
+
+	
+}
+
+
+
+
+
+body {
+
+	width: 11 * @pack;
+	padding: 0 @pack;
+	margin: 0 auto;
+	
+	.text(24px, 36px);
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	color: rgb(166, 166, 166);
+	
+}
+
+
+
+
+
+header {
+
+	h1 {
+	
+		.text(1.5em, 36px);
+		margin-top: 3em;
+	
+	}
+	
+	h1 + h2 {
+	
+		.text(.5em, 1.5em);
+		margin-bottom: 1.5em;
+	
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+.superscript {
+
+	font-size: 75%;
+	vertical-align: super;
+	line-height: 0;
+	.cleanStroke;
+
+}
+
+
+
+
+
+article {
+
+	margin-top: 144px;
+	
+	header {
+	
+		time {
+		
+			.text(13px, 18px);
+			color: rgb(245, 245, 245);
+
+		
+		}
+	
+		h2 {
+		
+			.text(36px, 36px);
+			color: rgb(196, 196, 196);
+			margin-top: 0;
+			text-transform: none;
+			
+			section {
+			
+				display: inline;
+				.text(13px, 18px);
+			
+			}
+		
+		}
+		
+		margin-bottom: 36px;
+	
+	}
+	
+	
+	
+	
+	
+	p, code, pre {
+	
+		.text(18px, 27px);
+		margin-bottom: 36px;
+		overflow-x: auto;	
+		overflow-y: hidden;
+	
+	}
+	
+	code, pre {
+	
+		font-family: "Monaco", "Courier", monospace;
+		.fancyBrightScrollbar;
+		.slatedScrollbar;
+		
+		padding: 27px 0;
+	
+	}
+	
+	h1 {
+	
+		.text(24px, 36px);
+		margin-top: 72px;
+		margin-bottom: 36px;
+	
+	}
+	
+	h2 {
+	
+		.text(18px, 36px);
+		margin-top: 36px;
+		text-transform: uppercase;
+	
+	}
+	
+	h1, h2 {
+	
+		color: white;
+	
+	}
+	
+	
+	
+	
+	
+	blockquote {
+	
+		.text(24px, 36px);
+	
+	}
+	
+	
+	
+	
+	
+	p, blockquote {
+
+		a {
+		
+			color: white;
+		
+			:after {
+			
+				.superscript;
+				content: "⎈";
+							
+			}
+		
+		}	
+		
+		a[href*="blog.monoceroi.com"],
+		a[href^="#"] {
+	
+			:after {
+			
+				content: "";
+							
+			}
+		
+		}
+		
+		sup {
+		
+			.superscript;
+		
+		}
+	
+	}
+	
+	
+	
+	
+	img {
+	
+		.borderRadius;
+		.shadowed;
+		max-width: 100%;
+		height: auto;
+	
+	}
+	
+	
+	
+	
+	.footnotes {
+	
+		margin-left: 4 * @pack;
+	
+		hr {
+		
+			display: none;
+		
+		}
+		
+		ol li {
+		
+			.text(13px, 18px, rgb(115, 115, 115));
+		
+			list-style: decimal outside;
+		
+			p {
+		
+				.text(13px, 18px, rgb(115, 115, 115));
+				
+			}
+			
+			a {
+			
+				color: rgb(160, 160, 160);
+			
+			}
+		
+		}
+	
+	}
+	
+	
+	footer {
+	
+		
+	
+	}
+	
+	+ article {
+	
+		:before {
+		
+			content: "";
+			font-family: "Wingdings";
+			display: block;
+			height: 4em;
+			text-align: center;
+			margin: 0 auto;
+			
+			.text(18px, 18px);
+		
+		}
+	
+	}
+
+}
+
+
+
+
+
+nav {
+
+	.text(13px, 18px, rgb(115, 115, 115));
+	text-align: center;
+
+	margin-top: 27px;
+	margin-bottom: 27px;
+
+	a {
+	
+		+ a {
+		
+			:before {
+			
+				content: " — ";
+			
+			}
+		
+		}
+	
+	}
+
+}
