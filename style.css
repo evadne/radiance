@@ -358,8 +358,10 @@ article blockquote {
   font-size: 24px;
   line-height: 36px;
   color: inherit;
+  margin-left: 72px;
 }
-article p a { color: white; }
+article p a { color: #f5f5f5; }
+article p a:hover { color: white; }
 article p a:after {
   font-size: 75%;
   vertical-align: super;
