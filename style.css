@@ -377,7 +377,8 @@ article p sup {
   line-height: 0;
   -webkit-text-stroke: 1px transparent;
 }
-article blockquote a { color: white; }
+article blockquote a { color: #f5f5f5; }
+article blockquote a:hover { color: white; }
 article blockquote a:after {
   font-size: 75%;
   vertical-align: super;
