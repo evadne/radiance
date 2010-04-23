@@ -145,11 +145,20 @@ header h1 + h2 {
 article { margin-top: 144px; }
 article header { margin-bottom: 36px; }
 article header time {
+  display: inline;
   font-size: 13px;
   line-height: 18px;
   color: inherit;
-  color: #f5f5f5;
+  color: #e1e1e1;
 }
+article header section {
+  display: inline;
+  font-size: 13px;
+  line-height: 18px;
+  color: inherit;
+  color: #e1e1e1;
+}
+article header time { color: #f5f5f5; }
 article header h2 {
   font-size: 36px;
   line-height: 36px;

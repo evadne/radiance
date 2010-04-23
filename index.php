@@ -8,12 +8,13 @@
 
 		<h2 id="post-<?php the_ID(); ?>">
 		
-			<!-- <a href="<?php the_permalink() ?>" rel="bookmark"> --><?php the_title(); ?><!-- </a> -->
+			<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
 		
-			<section class="category"><?php the_category(',') ?><?php if ( the_tags('<p>Tagged with ', ', ', '</p>') ) ?></section>
+			<time><?php the_time('F jS, Y'); ?> <?php _e("at"); ?> <?php the_time('g:i a'); ?></time>
+			
+			<section><?php the_category(','); the_tags('', ', ', '') ?></section>
 		
 		</h2>
-		<time><?php the_time('F jS, Y'); ?> <?php _e("at"); ?> <?php the_time('g:i a'); ?></time>
 		
 		</header>
 
