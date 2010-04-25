@@ -197,6 +197,22 @@ article pre {
   overflow-x: auto;
   overflow-y: hidden;
 }
+article ul {
+  font-size: 18px;
+  line-height: 27px;
+  color: inherit;
+  margin-bottom: 36px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+article ol {
+  font-size: 18px;
+  line-height: 27px;
+  color: inherit;
+  margin-bottom: 36px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
 article code {
   font-family: "Monaco", "Courier", monospace;
   padding: 27px 0;
@@ -445,6 +461,18 @@ article + article:before {
   font-size: 18px;
   line-height: 18px;
   color: inherit;
+}
+article ul {
+  padding-left: 36px;
+  margin-left: -36px;
+  list-style-type: square;
+  list-style-position: outside;
+}
+article ol {
+  padding-left: 36px;
+  margin-left: -36px;
+  list-style-type: decimal;
+  list-style-position: outside;
 }
 nav {
   font-size: 13px;
