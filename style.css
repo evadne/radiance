@@ -113,6 +113,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 .fancyBrightScrollbar::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.55); }
 .slatedScrollbar::-webkit-scrollbar-button:start:decrement { display: none; }
 .slatedScrollbar::-webkit-scrollbar-button:end:increment { display: none; }
+::selection { color: rgba(255, 255, 255, 0.65); }
 html { background: #2e3238; }
 body {
   width: 792px;
